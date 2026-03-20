@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+}
+
+@layer components {
+  .section-heading {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 text-center mb-4;
+  }
+  .section-subheading {
+    @apply text-base text-gray-500 text-center mb-12;
+  }
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl text-lg;
+  }
+}
